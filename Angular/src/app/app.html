@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-center align-items-center vh-100"
+   style="background: #093075;">
+  <div class="card shadow-lg p-4 border-0" 
+       style="width: 360px; border-radius: 18px; background: #0a1a35;">
+
+    <!-- Header -->
+    <div class="text-center fs-4 fw-bold text-white py-2"
+         style="border-bottom: 2px solid #1f3b70;">
+      Counter Web
+    </div>
+
+    <!-- Body -->
+    <div class="card-body d-flex flex-column align-items-center gap-4">
+
+      <h5 class="display-3 fw-bold"
+          style="color: #4da8ff;">
+        {{ count }}
+      </h5>
+
+      <div class="d-flex gap-3">
+
+        <button class="btn text-white px-4 py-2"
+                style="background: #1e88e5; border-radius: 10px;"
+                (click)="increament()">
+          +
+        </button>
+
+        <button class="btn text-white px-4 py-2"
+                style="background: #0751e5; border-radius: 10px;"
+                (click)="balance()">
+          =
+        </button>
+
+        <button class="btn text-white px-4 py-2"
+                style="background: #0dbdd8; border-radius: 10px;"
+                (click)="decreament()">
+          –
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>
